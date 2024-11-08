@@ -1,0 +1,145 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*----------------------- header에 관한 설정 css------------------------------*/
+header{
+    height: 100vh;
+    /* ファーストビュー背景画像 */
+    background: url("../img/110801.jpg") center / cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.site-name {
+    font-size: 80px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 320px;
+    height: 100px;
+  }
+  .catch-copy {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    bottom: 0;
+    margin: auto;
+    font-size: 40px;
+    width: 120px;
+    height: 320px;
+  }
+
+/*---------- gnav에 관한 설정 css--------*/
+#gnav{
+    width: 100%;
+    background: #6a6a6a;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow-x: hidden;
+}   
+#gnav ul {
+    /* ul의 전체적인 위치를 가로로 만드는 css*/
+    display: flex;
+    align-items: center;
+    list-style-type: none; /*ul태그의 점을 없애주는 문장*/
+}
+#gnav .page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#gnav a{
+    display: block;
+}
+#gnav a:hover{
+    opacity: .8;
+}
+
+#gnav .logo img{
+    display: block;
+    
+}
+#gnav .page a {
+    height: 100%;
+    line-height: 100px; /*헤드부분이 잘 안보일때 이 문장을 px로 고쳐서 확인할것*/
+    color:  #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2em;
+}
+/*----------------------- main에 관한 설정 css------------------------------*/
+main {
+    min-height: 100vh;
+    padding: 80px 0;
+    background: url(../img/110802.jpeg) center / cover no-repeat;
+}
+article{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    background: #ffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .3);
+}
+h2{
+    margin-bottom: 1em;
+    border-left: 8px solid #212121;
+    border-bottom: 1px solid #212121;
+    padding: 0 0 .25em 1em;
+}
+article p{
+    margin-bottom: 1em;
+}
+ul{
+    list-style-type: none;
+    align-items: center;
+}
+#IT1 {
+    max-width: 100px;
+    max-height: 150px;
+    align-items: center;
+    display: flex;
+   justify-self: center;
+}
+#IT2 {
+    max-width: 100px;
+    max-height: 150px;
+    align-items: center;
+    display: flex;
+   justify-self: center;
+}
+#IT3 {
+    max-width: 100px;
+    max-height: 150px;
+    align-items: center;
+    display: flex;
+   justify-self: center;
+}
+p{
+    text-align: center;
+}
+
+/*----------------------- footer에 관한 설정 css------------------------------*/
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #86BBDA;
+}
+
+#copyright{
+    color: #fff;
+    font-size: 12px;
+}
